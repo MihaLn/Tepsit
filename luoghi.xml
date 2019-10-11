@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<luoghi_da_visitare>
+	<luogo>
+		<nome>Galleria Nazionale</nome>
+		<img src = "/desktop/img /GalleriaNazionale.jpg">
+		<descrizione>
+		Tra la fine del Seicento e gli inizi del Settecento la celebre raccolta di opere d’arte,
+		oggetti rari e 	preziosi, dipinti e monete di proprietà dei Farnese
+		e trasferita da Roma a Parma a metà del XVII secolo
+		era esposta in un grande salone del Palazzo della Pilotta.
+		</descrizione>
+		<categoria>Museo</categoria>
+		<latitudine>44° 48′ 21.31″ N,</latitudine>
+		<longitudine> 10° 19′ 35.85″ E</longitudine>
+	</luogo>
+	<luogo>
+	  <nome>Museo Casa Natale Arturo Toscani</nome>
+	  <img src = "/desktop/img /Museo.jpg">
+	  <descrizione>
+	  Il 25 marzo 1867 Arturo Toscanini nasceva in questa casa dell’oltretorrente: un quartiere popolare,
+	  amante della musica, fiero e politicamente irrequieto,
+	  al cui  carattere Toscanini sarebbe rimasto per sempre legato.
+	  </descrizione>
+	  <categoria>Museo</categoria>
+	  <latitudine>44°48′15.06″N</latitudine>
+	  <longitudine> 10°19′20.88″E</longitudine>
+	</luogo>
+	<luogo>
+	<nome>Pinacoteca Stuard</nome>
+	<img src = "/desktop/img /Pianoteca.jpg">
+	<descrizione>
+	La collezione rappresenta l'esito della geniale e generosa intuizione di Giuseppe Stuard (Parma, 1790-1834),
+	amministratore della Congregazione di San Filippo Neri.Il percorso espositivo, dal XIV e XV secolo fino al Novecento,
+	comprende opere di varie culture artistiche e pittoriche. Fa da schermo e fondale il piccolo chiostro binato centrale.
+	L'itinerario transita attraverso dipinti, ritratti,
+	cimeli,arazzi e varie testimonianze documentali della storia artistica di Parma e della stessa famiglia Stuard.
+	</descrizione>
+	<categoria>Monastero</categoria>
+	<latitudine>44°48′15.7″N</latitudine>
+	<longitudine>10°19′46.4″E﻿</longitudine>
+	</luogo>
+</luoghi_da_visitare>
