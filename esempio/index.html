@@ -1,7 +1,13 @@
 <html>
-	<body>
+	<body style="background-color:#FFFFE0;">
+	<style>
+	p.a {
+ 		 margin:50px 0;
+	     }
+	</style>
+	<button type="button" style="width:150px;height:50px;" onclick=" ">Maggiore!</button>
+	<button type="button" style="width:150px;height:50px;" onclick=")">Minore!"</button>
 		<div id="demo"></div>
-
 		<script>
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() 
@@ -16,13 +22,17 @@
 					
 						for(var i=0;i<xmlDoc.getElementsByTagName("nome").length;i++)
 						{
+						var a = parseInt(xmlDoc.getElementsByTagName("recensione")[i].childNodes[0].nodeValue);
+						if(a>5){
 
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("nome")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("categoria")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("img")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("descrizione")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("latitudine")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
-							risultato+='<p>'+'<h1>'+xmlDoc.getElementsByTagName("longitudine")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a">'+'<h1 align="center">'+xmlDoc.getElementsByTagName("nome")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a">'+'<h1>'+xmlDoc.getElementsByTagName("categoria")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a"><img src="'+xmlDoc.getElementsByTagName("img")[i].childNodes[0].nodeValue +'" style="width:400px;height:308px;">'+'</p>';
+							risultato+='<p class="a">'+'<h1>'+xmlDoc.getElementsByTagName("descrizione")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a">'+'<h1>'+xmlDoc.getElementsByTagName("latitudine")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a">'+'<h1>'+xmlDoc.getElementsByTagName("longitudine")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+							risultato+='<p class="a">'+'<h1>'+xmlDoc.getElementsByTagName("recensione")[i].childNodes[0].nodeValue+'</h1>'+'</p>';
+						       }
 						}
 					document.getElementById("demo").innerHTML=risultato;
 					}
