@@ -1,0 +1,16 @@
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+if(this.readyState == 4 && this.status == 200) {
+ var cntFile = xhttp.responseText;
+	var obj = JSON.parse(cntFile);
+	car objChild=obj.programmaTelevisiva;
+	
+var ilmiohtml='<table border ="1"><tr><th>Nome</th><th>Genere</th></tr>;
+for (var i=0;i<objChild.length;i++){
+	ilmiohtml+='<tr><td>'+objChild[i].Nome+'</td><td>'+objChild[i].Genere'</td></tr>';
+	}
+ilmiohtml='</table>';
+ document.getElementById("risultato".innerHTML=ilmiohtml;
+ }};
+ xhttp.open("GET","programmazione.json", true);
+ xhttp.send();
