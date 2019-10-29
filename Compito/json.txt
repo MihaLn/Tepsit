@@ -1,0 +1,20 @@
+{
+  "programmaTelevisiva": [
+    {
+      "Nome": "Joker",
+      "Genere": "Dramma/FilmThriller"
+    },
+    {
+      "Nome": "Jumanji",
+      "Genere": "FilmFantastico"
+    },
+    {
+      "Nome": "Guidare insieme 2",
+      "Genere": "FilmFantastico"
+    },
+    {
+      "Nome": "Deadpool2",
+      "Genere": "FilmFantastico"
+    }
+  ]
+}

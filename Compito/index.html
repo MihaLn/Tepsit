@@ -1,0 +1,21 @@
+<html>
+<div id="info" style="margin: 20px,0"></div>
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+if(this.readyState == 4 && this.status == 200) {
+ var cntFile = xhttp.responseText;
+	var obj = JSON.parse(cntFile);
+	var objChild=obj.programmaTelevisiva;
+	
+var esempio='<table><tr><th>Nome</th><th>Genere</th></tr>';
+for (var i=0;i<objChild.length;i++){
+	esempio+='<tr><td>'+objChild[i].Nome+'</td><td>'+objChild[i].Genere+'</td></tr>';
+	}
+esempio+='</table>';
+ document.getElementById("info").innerHTML=esempio;
+ }}
+ xhttp.open("GET","json.txt", true);
+ xhttp.send();
+</script>
+</html>
