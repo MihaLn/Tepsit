@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Esercizio</title>
+</head>
+<body>
+<div id="demo"></div>
+<script>
+var JSONdoc;
+loadJSONdoc();
+function loadJSONdoc()
+{
+var xhttp = new XMLHttpRequest();
+var risultato='';
+var text, parser;
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+	text=this.responseText;
+	JSONdoc = JSON.parse(text);
+	//var objChild=obj.canali;
+	
+	for(var i in JSONdoc.canali)
+	{
+		risultato+='<p>'+'<h1>'+JSONdoc.canali[i].programma[0].nome+'</h1>'+'</p>';
+		risultato+='<p>'+JSONdoc.canali[i].programma[0].generi+'</p>';
+	}
+	risultato+='<button onclick="canale5();">generi canale5</button>';
+	risultato+='<button onclick="italia1();">generi italia1</button>';
+	risultato+='<button onclick="rai1();">generi rai 1</button>';
+	risultato+='<button onclick="rai2();">generi rai 2</button>';
+    document.getElementById("demo").innerHTML=risultato;	
+  }
+};
+xhttp.open("GET", "SitoWebJSON2.json", true);
+xhttp.send();
+}
+function canale5()
+{
+	var risultato='';
+	for(var i in JSONdoc.canali)
+	{
+		if(JSONdoc.canali[i].programma[0].nome=="canale5")
+		{
+			risultato+='<p>'+'<h1>'+JSONdoc.canali[i].programma[0].nome+'</h1>'+'</p>';
+			risultato+='<p>'+JSONdoc.canali[i].programma[0].generi+'</p>';
+		}
+	}
+	risultato+='<button onclick="loadJSONdoc();">Tutti i generi</button>';
+	risultato+='<button onclick="italia1();">generi italia1</button>';
+	risultato+='<button onclick="rai1();">generi rai 1</button>';
+	risultato+='<button onclick="rai2();">generi rai 2</button>';
+    document.getElementById("demo").innerHTML=risultato;
+}
+function italia1()
+{
+	var risultato='';
+	for(var i in JSONdoc.canali)
+	{
+		if(JSONdoc.canali[i].programma[0].nome=="italia1")
+		{
+			risultato+='<p>'+'<h1>'+JSONdoc.canali[i].programma[0].nome+'</h1>'+'</p>';
+			risultato+='<p>'+JSONdoc.canali[i].programma[0].generi+'</p>';
+		}
+	}
+	risultato+='<button onclick="loadJSONdoc();">Tutti i generi</button>';
+	risultato+='<button onclick="canale5();">generi canale 5</button>';
+	risultato+='<button onclick="rai1();">generi rai 1</button>';
+	risultato+='<button onclick="rai2();">generi rai 2</button>';
+    document.getElementById("demo").innerHTML=risultato;
+}
+function rai1()
+{
+	var risultato='';
+	for(var i in JSONdoc.canali)
+	{
+		if(JSONdoc.canali[i].programma[0].nome=="rai1")
+		{
+			risultato+='<p>'+'<h1>'+JSONdoc.canali[i].programma[0].nome+'</h1>'+'</p>';
+			risultato+='<p>'+JSONdoc.canali[i].programma[0].generi+'</p>';
+		}
+	}
+	risultato+='<button onclick="loadJSONdoc();">Tutti i generi</button>';
+	risultato+='<button onclick="canale5();">generi canale 5</button>';
+	risultato+='<button onclick="italia1();">generi italia 1</button>';
+	risultato+='<button onclick="rai2();">generi rai 2</button>';
+    document.getElementById("demo").innerHTML=risultato;
+}
+function rai2()
+{
+	var risultato='';
+	for(var i in JSONdoc.canali)
+	{
+		if(JSONdoc.canali[i].programma[0].nome=="rai2")
+		{
+			risultato+='<p>'+'<h1>'+JSONdoc.canali[i].programma[0].nome+'</h1>'+'</p>';
+			risultato+='<p>'+JSONdoc.canali[i].programma[0].generi+'</p>';
+		}
+	}
+	risultato+='<button onclick="loadJSONdoc();">Tutti i generi</button>';
+	risultato+='<button onclick="canale5();">generi canale 5</button>';
+	risultato+='<button onclick="italia1();">generi italia 1</button>';
+	risultato+='<button onclick="rai1();">generi rai 1</button>';
+    document.getElementById("demo").innerHTML=risultato;
+}
+</script></br>
+</body>
+</html>
