@@ -1,0 +1,40 @@
+</head>
+<body>
+<h1>canali da guardare per stasera</h1>
+<div id="demo"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+loadDoc();
+function loadDoc() 
+{
+
+  xmlhttp.onreadystatechange = function() 
+{
+	  if (this.readyState == 4 && this.status == 200) 
+		{
+			var myObj = JSON.parse(this.responseText);
+			var x="";
+			var objChild=myObj.programma;
+			
+    			console.log(myObj);
+			
+			for(i = 0; i < objChild.length; i++)
+				{
+					x += objChild[i].canali +"<br>";
+					x += objChild[i].nome +"<br>";
+				}
+document.getElementById("demo").innerHTML = x;
+								
+		}
+};
+
+
+ 	xmlhttp.open("GET", "canali.php", true);
+	xmlhttp.send();
+}
+</script>
+
+
+</body>
+</html>
