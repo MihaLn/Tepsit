@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registro elettronico</title>
+</head>
+<body>
+<h1>voti degli studenti</h1>
+<div id="demo"></div>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+loadDoc();
+function loadDoc() 
+{
+
+  xmlhttp.onreadystatechange = function() 
+{
+	  if (this.readyState == 4 && this.status == 200) 
+		{
+			var i;
+			var x="";
+    		var myObj = JSON.parse(this.responseText);
+			
+			for(i = 0; i < myObj.registro.length; i++)
+				{
+
+					x+= myObj.registro[i].nome+"<br>";
+					x+= myObj.registro[i].cognome+"<br>";
+					//x+= myObj.registro[i].materia+"<br>";
+					//x+= myObj.registro[i].voto+"<br>";
+					
+				}
+document.getElementById("demo").innerHTML = x;
+								
+		}
+};
+
+
+ 	xmlhttp.open("GET", "votiDinamico.php", true);
+	xmlhttp.send();
+}
+</script>
+
+
+</body>
+</html>
