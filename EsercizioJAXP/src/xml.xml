@@ -1,0 +1,22 @@
+<studenti>
+	<studente>
+		<nome>Gabrile</nome>
+		<cognome>Aresi</cognome>
+	</studente>
+	<studente>
+		<nome>Manuelito</nome>
+		<cognome>Eterno</cognome>
+	</studente>
+	<studente>
+		<nome>Alessandro</nome>
+		<cognome>Spinarelli</cognome>
+	</studente>
+	<studente>
+		<nome>Matteo</nome>
+		<cognome>Scapella</cognome>
+	</studente>
+	<studente>
+		<nome>Andrea</nome>
+		<cognome>Zoleso</cognome>
+	</studente>
+</studenti>
