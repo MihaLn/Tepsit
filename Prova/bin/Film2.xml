@@ -1,0 +1,18 @@
+<canale>
+	<film>
+		<titolo>Tom e Jerry</titolo>
+		<genere>cartone</genere>
+		<ora>19:30</ora>
+	</film>
+	<film>
+		<titolo>The IrishMan</titolo>
+		<genere>fantastico,storico</genere>
+		<ora>20:45</ora>
+	</film>
+	<film>
+		<titolo>Ace Ventura</titolo>
+		<genere>fantascienza,comedia</genere>
+		<ora>21:00</ora>
+	</film>
+
+</canale>

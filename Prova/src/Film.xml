@@ -1,0 +1,18 @@
+<canale>
+	<film>
+		<titolo>IT</titolo>
+		<genere>horror</genere>
+		<ora>19:30</ora>
+	</film>
+	<film>
+		<titolo>The IrishMan</titolo>
+		<genere>storico</genere>
+		<ora>20:45</ora>
+	</film>
+	<film>
+		<titolo>TorroTorro</titolo>
+		<genere>comedia</genere>
+		<ora>21:15</ora>
+	</film>
+
+</canale>
