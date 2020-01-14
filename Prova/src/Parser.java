@@ -18,4 +18,16 @@ public class Parser
 		
 		return document;
 	}
+	public static Document newDom() throws ParserConfigurationException  
+	{
+		DocumentBuilderFactory factory;
+		DocumentBuilder builder;
+		Document document;
+		factory = DocumentBuilderFactory.newInstance();
+		builder=factory.newDocumentBuilder();
+		document=builder.newDocument();
+		
+		return document;
+				
+	}
 }

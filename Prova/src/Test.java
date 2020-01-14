@@ -15,7 +15,6 @@ public class Test{
 		Scanner scString= new Scanner(System.in);
 		Albero film= new Albero();
 		film.pars();
-		film.pars();
 		
 		while(true) 
 		{
@@ -36,7 +35,6 @@ public class Test{
 				}
 				case 2:
 				{
-					film.stampa();
 					film.stampa();
 					break;
 				}
