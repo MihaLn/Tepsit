@@ -1,0 +1,17 @@
+<Canale>
+	<Film>
+		<Titolo>Gabriele e i 13 gnomi</Titolo>
+		<Genere>Fantasy</Genere>
+		<Ora>20:30</Ora>
+	</Film>
+	<Film>
+		<Titolo>Lo Hobbit e la Elisabetha</Titolo>
+		<Genere>Animazione</Genere>
+		<Ora>01:30</Ora>
+	</Film>
+	<Film>
+		<Titolo>AceVentura</Titolo>
+		<Genere>Fatnasy</Genere>
+		<Ora>18:30</Ora>
+	</Film>
+</Canale>

@@ -1,0 +1,47 @@
+1)
+In classe abbiamo studiato il formato xml e jason.
+
+- Xml o extensive markup language è un metalinguaggio usato per strutturare file o documenti.
+In orgigine è stuto concepito per sostituire l'html, siccome che quest'ultimo era povero di tag.
+Xml infatti permette di creare i propri tag, validandoli grazie ad uno schema xsd.
+Oggi l'obbiettivo di sostituire l'html è fallito ma xml risulta utile in combinazione con javascript, java, php, ecc... Per la creazione di web-services, poichè presenta anche un buon livello di sicurezza.
+
+- Jason è un formato di testo derivato dal javascript, utile per il parsing dei documenti in formato stringa all'interno di un programma e di facile lettura anche da parte del programmatore.
+
+
+2)
+La libreria JAXP, per la manipolazione di documenti xml, mette a disposizione le interfaccie:
+
+- Element: si utilizza per manipolare il valore di un elemento nell'albero (Dal parsing dell'xml viene generata una struttura ad albero).
+
+- Node: è come un puntatore ad uno specifico nodo dell'albero, a differenza di element node serve per navigare l'albero o manipolarne la struttura.
+
+- NodeList: contiene una lista di nodi.
+
+- Text: serve per ottenere il valore testuale di un nodo o elemento.
+
+- Document: contiene tutto l'albero generato dal parsing del documento xml.
+
+- Attr: serve per manipolare gli attributi di un elemento o nodo.
+
+
+3)
+Il motivo per cui sono nati i cms è quello di facilitare il lavoro dei programmatori che dovendo creare un sito web, dovevano anche creare un pannello di controllo per il cliente, il quale richiedeva più lavoro rispetto alla creazione del sito, di conseguenza era molto costoso per il cliente.
+In fatti il problema era creare un database e un pannello di controllo che andassero bene per la maggior parte dei siti, cosa estremamente complicata.
+Per questo motivo è  nato wordpress, il quale presenta un database che non rispetta le normali regole ma che si adatta a molti tipi di problemi.
+
+Vantaggi di wordpress:
+
+- è open source e costantemente aggiornato.
+- ha un interfaccia facile ed intuitiva anche per chi non ha conoscenze informatiche avanzate.
+- presenta una grande varietà di temi e plug-in.
+- ogni pagina o tema è modificabile (da codice).
+- permette di adattare le pagine a tablet e smartphones.
+
+Svantaggi:
+
+- a causa del database non conforme alle regole, un sito in wordpress può risultare lento.
+- non è adatto per la realizzazione di progetti complessi tipo pagine multilingua.
+- i siti in wordpress sono più facili da hackerare rispetto a siti sviluppati senza cms.
+- in alcuni casi può essere difficile installarlo a causa della gestione dei privilegi.
+

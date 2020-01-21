@@ -1,0 +1,17 @@
+<Canale>
+	<Film>
+		<Titolo>Il signore degli anelli</Titolo>
+		<Genere>Fantasy</Genere>
+		<Ora>20:00</Ora>
+	</Film>
+	<Film>
+		<Titolo>Lo Hobbit</Titolo>
+		<Genere>Fantasy</Genere>
+		<Ora>01:30</Ora>
+	</Film>
+	<Film>
+		<Titolo>Dumbo</Titolo>
+		<Genere>Animazione</Genere>
+		<Ora>18:30</Ora>
+	</Film>
+</Canale>

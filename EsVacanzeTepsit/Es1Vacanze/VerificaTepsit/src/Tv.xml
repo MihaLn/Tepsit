@@ -1,0 +1,16 @@
+<Canale>
+	<Film>
+		<Titolo>Avengers</Titolo>
+		<Genere>Fantasy</Genere>
+		<Ora>21:00</Ora></Film>
+	<Film>
+		<Titolo>Xman</Titolo>
+		<Genere>Fantasy</Genere>
+		<Ora>00:30</Ora>
+	</Film>
+	<Film>
+		<Titolo>Aladin</Titolo>
+		<Genere>Animazione</Genere>
+		<Ora>19:00</Ora>
+	</Film>
+</Canale>
